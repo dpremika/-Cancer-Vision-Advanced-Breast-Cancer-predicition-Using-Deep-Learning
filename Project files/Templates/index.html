@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Home page </title>
+    <link rel="stylesheet" href="/Static/Css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Css/style.css') }}">
+
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+            <div class="logo">Breast Cancer Predicition</div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="{{ url_for('classify') }}">Classify</a></li>
+                <li><a href="{{ url_for('team') }}">Team</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="main"> 
+
+        <div class="web-title">
+            <h2> Advanced Breast Cancer Predicition Using Deep Learning</h2>
+            <p> Breast cancer is prevalent in women and the second leading cause of death. Conventional breast cancer detection methods require several laboratory tests and medical experts.                                                                  		Automated breast cancer detection is thus very important for timely treatment. 
+                This study explores the influence of various feature selection technique to increase the performance of machine learning methods for breast cancer detection. 
+                Experimental results shows that use of appropriate features tend to show highly accurate prediction.
+.</p>
+        </div>
+
+        
+    </main>
+
+    <footer></footer>
+</body>
+</html>
